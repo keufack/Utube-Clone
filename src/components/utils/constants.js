@@ -20,6 +20,7 @@ export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
   { name: "JS Mastery", icon: <CodeIcon /> },
+  { name: "anime", icon: <SportsMartialArtsIcon /> },
   { name: "Football", icon: <SportsSoccerIcon /> },
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Basketball", icon: <SportsBasketballIcon /> },
@@ -34,7 +35,7 @@ export const categories = [
   { name: "Coding", icon: <CodeIcon /> },
   { name: "ReactJS", icon: <CodeIcon /> },
   { name: "NextJS", icon: <CodeIcon /> },
-  { name: "karacte", icon: <SportsMartialArtsIcon /> },
+
   { name: "Fashion", icon: <CheckroomIcon /> },
   { name: "Beauty", icon: <FaceRetouchingNaturalIcon /> },
   { name: "Comedy", icon: <TheaterComedyIcon /> },
