@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
-import { Typography, Box, Stack } from "@mui/material";
+import { Typography, Box, Stack, CircularProgress } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 
 import Video from "./Video";
@@ -22,7 +22,19 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  if (!videoDetail?.snippet) return "Loading.....";
+  if (!videoDetail?.snippet)
+    return (
+      <Box minHeight="95vh">
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          height="80vh"
+        >
+          <CircularProgress />
+        </Stack>
+      </Box>
+    );
 
   const {
     snippet: { title, channelId, channelTitle },
